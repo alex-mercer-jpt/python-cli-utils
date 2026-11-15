@@ -46,6 +46,3 @@ def handle_my_filter() -> None:
         print("Ошибка: нужно вводить целые числа, разделенные запятыми.")
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python my_filter.py
-    handle_my_filter()

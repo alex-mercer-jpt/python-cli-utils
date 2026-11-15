@@ -32,6 +32,3 @@ def handle_map_lambda_range() -> None:
         print(i)
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python map_lambda_range.py
-    handle_map_lambda_range()

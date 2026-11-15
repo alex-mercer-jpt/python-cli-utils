@@ -40,6 +40,3 @@ def handle_number_formatting() -> None:
     print(f"{number_3:_>19_b}")
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python number_formatting.py
-    handle_number_formatting()

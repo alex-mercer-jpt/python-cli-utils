@@ -44,6 +44,3 @@ def handle_my_map() -> None:
         print("Ошибка: нужно вводить целые числа.")
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python my_map.py
-    handle_my_map()

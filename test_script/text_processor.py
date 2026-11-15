@@ -40,6 +40,3 @@ def handle_text_processing() -> None:
         print(result)
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python text_processor.py
-    handle_text_processing()

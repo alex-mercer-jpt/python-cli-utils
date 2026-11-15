@@ -29,6 +29,3 @@ def handle_clean_text() -> None:
     print(f"Результат: {cleaned_text}")
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python clean_text.py
-    handle_clean_text()

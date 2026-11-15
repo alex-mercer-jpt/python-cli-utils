@@ -76,6 +76,3 @@ def handle_repeat_decorator() -> None:
         print("Неверный режим.")
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python decorator_repeat.py
-    handle_repeat_decorator()

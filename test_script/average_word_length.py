@@ -25,7 +25,3 @@ def handle_average_word_length() -> None:
 
     print(f"Средняя длина слова: {average}")
 
-
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python average_word_length.py
-    handle_average_word_length()

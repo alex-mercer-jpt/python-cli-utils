@@ -39,6 +39,3 @@ def handle_check_range() -> None:
     print(f"Все числа внутри диапазона: {all_ok}")
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python check_range.py
-    handle_check_range()

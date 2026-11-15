@@ -28,6 +28,4 @@ def handle_letter_check() -> None:
     print(is_correct)
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python letter_check.py
-    handle_letter_check()
+

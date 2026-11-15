@@ -33,6 +33,3 @@ def handle_word_frequency() -> None:
     print(f"Самое частое слово: '{most_common}' (встречается {count} раз(а))")
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python word_frequency.py
-    handle_word_frequency()

@@ -44,6 +44,3 @@ def handle_fibonacci() -> None:
     print(f"Число Фибоначчи под номером {n}: {result}")
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python fibonacci.py
-    handle_fibonacci()

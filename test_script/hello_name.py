@@ -22,6 +22,3 @@ def handle_hello() -> None:
     print(f"Hello, {user_name}")
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python hello_name.py
-    handle_hello()

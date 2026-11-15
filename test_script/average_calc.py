@@ -35,7 +35,3 @@ def handle_average() -> None:
         else:
             print(f"Среднее: {result}")
 
-
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python average_calc.py
-    handle_average()

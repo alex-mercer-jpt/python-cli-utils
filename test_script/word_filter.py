@@ -50,6 +50,3 @@ def handle_word_filter() -> None:
         print(word)
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python word_filter.py
-    handle_word_filter()

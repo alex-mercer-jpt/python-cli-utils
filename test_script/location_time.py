@@ -24,6 +24,3 @@ def handle_location_time() -> None:
     print(f"Current location is {user_city} and time is {user_time}")
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python location_time.py
-    handle_location_time()

@@ -64,6 +64,3 @@ def handle_fibonacci_decorated() -> None:
     print(f"Результат: {result}")
 
 
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python decorator_cache.py
-    handle_fibonacci_decorated()
