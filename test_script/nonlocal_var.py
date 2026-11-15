@@ -8,30 +8,35 @@
 """
 
 
+def create_multiplier(factor: int):
+    """Внешняя функция. Создает функцию-умножитель."""
+    # Локальная переменная внешней функции
+    last_result = 0
+
+    def multiplier(num: int) -> int:
+        """Внутренняя функция. Использует nonlocal."""
+        nonlocal last_result
+        # Мы меняем переменную из внешней функции!
+        last_result = num * factor
+        return last_result
+
+    return multiplier
+
+
 def handle_nonlocal_var() -> None:
-    """
-    Обертка для меню: демонстрация nonlocal.
-    Переменная 'b' находится в этой функции, а вложенная 'h'
-    изменяет её с помощью nonlocal.
-    """
-    print("--- Увеличение числа на 10 (демонстрация nonlocal) ---")
+    """Обертка для меню."""
+    print("Создаем функцию-умножитель на 2.")
+    times_two = create_multiplier(2)
 
     try:
-        raw = input("Введите целое число (например, 0): ").strip()
-        b = int(raw)
+        num1 = int(input("Введите первое число: "))
+        res1 = times_two(num1)
+        print(f"Результат: {res1}")
+
+        num2 = int(input("Введите второе число: "))
+        res2 = times_two(num2)
+        print(f"Результат: {res2}")
+
+        print("Как видите, внутренняя функция запомнила, что она умножает на 2.")
     except ValueError:
-        print("Ошибка: нужно ввести целое число.")
-        return
-
-    def h():
-        # Указываем, что 'b' берется из окружающей функции, а не создается новая
-        nonlocal b
-        b = b + 10
-
-    h()
-    print(f"Результат: {b}")
-
-
-if __name__ == "__main__":
-    # Изолированный запуск для проверки: python nonlocal_var.py
-    handle_nonlocal_var()
+        print("Ошибка ввода.")
