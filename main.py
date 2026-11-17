@@ -4,28 +4,28 @@
 """
 
 # Импорт конкретных функций
-from test_script.hello_name import handle_hello
-from test_script.location_time import handle_location_time
-from test_script.check_range import handle_check_range
-from test_script.letter_check import handle_letter_check
-from test_script.number_formatting import handle_number_formatting
-from test_script.clean_text import handle_clean_text
-from test_script.average_word_length import handle_average_word_length
-from test_script.max_values import handle_max_values
-from test_script.unique_chars import handle_unique_chars
-from test_script.word_frequency import handle_word_frequency
+from sandbox.hello_name import handle_hello
+from sandbox.location_time import handle_location_time
+from sandbox.check_range import handle_check_range
+from sandbox.letter_check import handle_letter_check
+from sandbox.number_formatting import handle_number_formatting
+from sandbox.clean_text import handle_clean_text
+from sandbox.average_word_length import handle_average_word_length
+from sandbox.max_values import handle_max_values
+from sandbox.unique_chars import handle_unique_chars
+from sandbox.word_frequency import handle_word_frequency
 # Импорт модуля целиком
-import word_filter
-import average_calc
-import text_processor
-import map_lambda_range
-import fibonacci
-import my_map
-import my_filter
-import decorator_cache
-import decorator_repeat
-import global_var
-import nonlocal_var
+from sandbox import word_filter
+from sandbox import average_calc
+from sandbox import text_processor
+from sandbox import map_lambda_range
+from sandbox import fibonacci
+from sandbox import my_map
+from sandbox import my_filter
+from sandbox import decorator_cache
+from sandbox import decorator_repeat
+from sandbox import global_var
+from sandbox import nonlocal_var
 
 def main() -> None:
     menu = {
